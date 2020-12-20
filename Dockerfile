@@ -2,8 +2,7 @@ FROM gitpod/workspace-full-vnc
 
 # Install dependencies
 RUN apt-get update \
- && apt-get install -y libasound2-dev libgtk-3-dev libnss3-dev \
- && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+ && apt-get install -y libasound2-dev libgtk-3-dev libnss3-dev
 
 # Fetch Windows 95 image
 RUN cd /tmp \
